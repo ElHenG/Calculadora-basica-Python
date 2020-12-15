@@ -1,0 +1,100 @@
+def Solosuma():
+    n = int(input("Ingrese número: "))
+    n2 = int(input("Ingrese número: "))
+    c = n + n2
+    return c
+
+def Soloresta():
+    n = int(input("Ingrese número: "))
+    n2 = int(input("Ingrese número: "))
+    c = n - n2
+    return c
+
+def Solomulti():
+    n = int(input("Ingrese número: "))
+    n2 = int(input("Ingrese número: "))
+    c = n * n2
+    return c
+
+def Solodivision():
+    n = int(input("Ingrese número: "))
+    n2 = int(input("Ingrese número: "))
+    c = n / n2
+    return c
+
+def Soloelevar():
+    n = int(input("Ingrese número: "))
+    n2 = int(input("Ingrese número: "))
+    c = n + n2
+    return c
+
+def Solorestodiv():
+    n = int(input("Ingrese número: "))
+    n2 = int(input("Ingrese número: "))
+    c = n % n2
+    return c
+
+import  math
+
+def Calculohipo():
+    ca = float(input("Ingrese cateto: "))
+    ca2 = float(input("Ingrese cateto 2: "))
+    c = math.sqrt(ca**2 + ca2**2)
+    return c
+
+def Soloraiz():
+    x = int(input("Ingrese número: "))
+    y = math.sqrt(x)
+    return y
+
+def Solocuadrado():
+    n = int(input("Ingrese número: "))
+    c = n**2
+    return c
+
+def Mayor():
+    a = float(input("Ingrese número: "))
+    b = float(input("Ingrese número: "))
+    c = max(a, b)
+    return c
+
+def Menu():
+    print("1.- Suma: ")
+    print("2.- Resta: ")
+    print("3.- Multiplicación: ")
+    print("4.- División: ")
+    print("5.- Elevar: ")
+    print("6.- Resto de la división: ")
+    print("7.- Calcular Hipotenusa: ")
+    print("8.- Calcular Raíz: ")
+    print("9.- Calcular cuadrado: ")
+    print("10.- Calcular Mayor: ")
+    print("0.- Salir de la calculadora")
+    opc = int(input())
+    return opc
+
+opcion = Menu()
+while opcion != 0:
+    if opcion == 1:
+        print("Resultado:", Solosuma())
+    elif opcion == 2:
+        print("Resultado:", Soloresta())
+    elif opcion == 3:
+        print("Resultado:", Solomulti())
+    elif opcion == 4:
+        print("Resultado:", Solodivision())
+    elif opcion == 5:
+        print("Resultado:", Soloelevar())
+    elif opcion == 6:
+        print("Resultado:", Solorestodiv())
+    elif opcion == 7:
+        print("Hipotenusa:", Calculohipo())
+    elif opcion == 8:
+        print("Raíz:", Soloraiz())
+    elif opcion == 9:
+        print("Resultado:", Solocuadrado())
+    elif opcion == 10:
+        print("Mayor:", Mayor())
+    opcion = Menu()
+
+print("Fin de la calculadora")
